@@ -29,7 +29,7 @@ app.get('/credit', (req,res) => {
 });
 
 app.get('/profile', (req,res) => {
-    res.render('profile', {users });
+    res.render('profile', {user: users[0] });
 });
 
 app.listen(3000, () => console.log('PS project running in port 3000....'));
