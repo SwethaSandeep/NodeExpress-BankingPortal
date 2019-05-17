@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-
-
-const {accounts} = require('../data');
+const { accounts } = require('../data');
 
 router.get('/savings', (req,res) => {
     res.render('account', { account: accounts.savings });
@@ -20,4 +18,4 @@ router.get('/profile', (req,res) => {
     res.render('profile', {user: users[0] });
 });
 
-module.exports = router;
+module.exports = router
