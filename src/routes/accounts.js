@@ -14,8 +14,6 @@ router.get('/credit', (req,res) => {
     res.render('account', { account: accounts.credit });
 });
 
-router.get('/profile', (req,res) => {
-    res.render('profile', {user: users[0] });
-});
+
 
 module.exports = router
