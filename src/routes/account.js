@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
+
+
 const {accounts} = require('../data');
 
-app.get('/savings', (req,res) => {
+router.get('/savings', (req,res) => {
     res.render('account', { account: accounts.savings });
 });
 
